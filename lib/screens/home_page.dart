@@ -21,6 +21,7 @@ class HomePage extends StatelessWidget {
                     src: 'https://wallpaper.dog/large/20492984.jpg',
                   );
                 },
+                scrollDirection: Axis.vertical,
               ),
               // ContentScreen(src: '',),
               Padding(

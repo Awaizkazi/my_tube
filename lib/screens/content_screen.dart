@@ -7,12 +7,13 @@ class ContentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
+      fit: StackFit.expand,
       children: [
         Image.network(
           src,
           fit: BoxFit.cover,
-          width: double.infinity,
         ),
+        
       ],
     );
   }
