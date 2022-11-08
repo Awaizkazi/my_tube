@@ -13,7 +13,7 @@ class ContentScreen extends StatefulWidget {
 
 class _ContentScreenState extends State<ContentScreen> {
   late VideoPlayerController _videoPlayerController;
-  late ChewieController _chewieController;
+  ChewieController? _chewieController;
   @override
   void initState() {
     initializePlayer();
@@ -36,7 +36,7 @@ class _ContentScreenState extends State<ContentScreen> {
   @override
   void dispose() {
     _videoPlayerController.dispose();
-    _chewieController.dispose();
+    _chewieController!.dispose();
   }
 
   @override
@@ -48,9 +48,9 @@ class _ContentScreenState extends State<ContentScreen> {
         // In this part let's actual video player and double tap
 
         _chewieController != null &&
-                _chewieController.videoPlayerController.value.isInitialized
+                _chewieController!.videoPlayerController.value.isInitialized
             ? Chewie(
-                controller: _chewieController,
+                controller: _chewieController!,
               )
             : SizedBox(),
         OptionsScreen(),

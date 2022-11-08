@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   final List<String> videos = [
-    'https://www.instagram.com/stories/kaif_qadri_razvi/2966443630861481374/',
+    'https://www.pexels.com/video/clouds-of-paint-mixing-underwater-7565437/',
     'https://www.instagram.com/p/CkBSvhkgBWp/',
     'https://www.instagram.com/p/CkDPPLTA3yQ/',
     'https://www.instagram.com/p/Cih8xGzJlOi/',
