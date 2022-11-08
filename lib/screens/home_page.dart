@@ -4,7 +4,15 @@ import 'package:my_tube/screens/content_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final List<String> videos = [
+    'https://www.instagram.com/stories/kaif_qadri_razvi/2966443630861481374/',
+    'https://www.instagram.com/p/CkBSvhkgBWp/',
+    'https://www.instagram.com/p/CkDPPLTA3yQ/',
+    'https://www.instagram.com/p/Cih8xGzJlOi/',
+    'https://www.instagram.com/p/CknPbRWL5NN/',
+    'https://www.instagram.com/p/CkZ_Hm2pJdE/',
+  ];
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +26,7 @@ class HomePage extends StatelessWidget {
                 itemCount: 4,
                 itemBuilder: (context, index) {
                   return ContentScreen(
-                    src: 'https://wallpaper.dog/large/20492984.jpg',
+                    src: videos[index],
                   );
                 },
                 scrollDirection: Axis.vertical,

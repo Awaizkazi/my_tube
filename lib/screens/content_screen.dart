@@ -25,7 +25,12 @@ class _ContentScreenState extends State<ContentScreen> {
       [_videoPlayerController.initialize()],
     );
     _chewieController = ChewieController(
-        videoPlayerController: _videoPlayerController, autoPlay: true);
+      videoPlayerController: _videoPlayerController,
+      autoPlay: true,
+      showControls: false,
+      fullScreenByDefault: true,
+    );
+    setState(() {});
   }
 
   @override
