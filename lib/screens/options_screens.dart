@@ -6,6 +6,7 @@ class OptionsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         SizedBox(),
         Row(
@@ -18,6 +19,7 @@ class OptionsScreen extends StatelessWidget {
                     Icons.person,
                     size: 18,
                   ),
+                  radius: 18,
                 ),
               ],
             )
