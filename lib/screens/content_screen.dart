@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_tube/screens/options_screens.dart';
 
 class ContentScreen extends StatelessWidget {
   final String src;
@@ -13,7 +14,7 @@ class ContentScreen extends StatelessWidget {
           src,
           fit: BoxFit.cover,
         ),
-        
+        OptionsScreen(),
       ],
     );
   }
