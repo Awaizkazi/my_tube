@@ -1,16 +1,3 @@
-# my_tube
+<h1> Reels CLone in MyTube Project </h1>
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1667902606](https://user-images.githubusercontent.com/88947135/200538758-3ad1bd70-4108-4d0d-b6d2-fab4de42475f.png)
