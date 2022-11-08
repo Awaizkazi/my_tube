@@ -5,6 +5,25 @@ class OptionsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      children: [
+        SizedBox(),
+        Row(
+          children: [
+            SizedBox(height: 110),
+            Row(
+              children: [
+                CircleAvatar(
+                  child: Icon(
+                    Icons.person,
+                    size: 18,
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+      ],
+    );
   }
 }
