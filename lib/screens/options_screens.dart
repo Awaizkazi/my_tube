@@ -21,6 +21,15 @@ class OptionsScreen extends StatelessWidget {
                   ),
                   radius: 18,
                 ),
+                Text('Flutter_developer'),
+                Icon(Icons.verified, size: 15),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Follow',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
               ],
             )
           ],
