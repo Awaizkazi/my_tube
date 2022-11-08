@@ -56,7 +56,7 @@ class OptionsScreen extends StatelessWidget {
                   Icon(Icons.favorite_outline),
                   Text('80k'),
                   SizedBox(height: 20),
-                  Icon(Icons.comment_rounded),
+                  Icon(Icons.comment),
                   Text('1223'),
                   SizedBox(height: 20),
                   Transform(
