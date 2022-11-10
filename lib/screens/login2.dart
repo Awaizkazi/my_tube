@@ -10,6 +10,23 @@ class Login2 extends StatefulWidget {
 class _Login2State extends State<Login2> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Container(
+        child: Stack(
+          children: [
+            Positioned(
+              height: 220,
+              top: 30,
+              left: 80,
+              child: Image.asset(
+                'assets/login2.png',
+                width: 220,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
