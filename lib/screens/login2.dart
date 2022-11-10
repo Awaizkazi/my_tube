@@ -21,7 +21,7 @@ class _Login2State extends State<Login2> {
                 left: 80,
                 child: Image.asset(
                   'assets/login2.png',
-                  width: 220,
+                  width: 250,
                   height: 230,
                 ),
               ),
@@ -40,12 +40,13 @@ class _Login2State extends State<Login2> {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      'Please enter the details below to continue',
+                      'Please enter the details below to continue.',
                       style: TextStyle(
                           fontSize: 15,
                           color: Colors.grey[600],
                           fontWeight: FontWeight.w600),
                     ),
+                    TextFormField(),
                   ],
                 ),
               ),
