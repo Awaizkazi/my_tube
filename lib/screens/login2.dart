@@ -12,35 +12,45 @@ class _Login2State extends State<Login2> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: Column(
-          children: [
-            Image.asset(
-              'assets/login2.png',
-            ),
-            Column(
-              children: [
-                Positioned(
-                  top: 320,
-                  left: 40,
-                  child: Text(
-                    'Login Now',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold),
-                  ),
+      body: Container(
+        child: SafeArea(
+          child: Stack(
+            children: [
+              Positioned(
+                top: 30,
+                left: 80,
+                child: Image.asset(
+                  'assets/login2.png',
+                  width: 220,
+                  height: 230,
                 ),
-                Text(
-                  'data',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold),
+              ),
+              Positioned(
+                top: 290,
+                left: 80,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Login Now',
+                      style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      'Please enter the details below to continue',
+                      style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.grey[600],
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-          ],
+              ),
+            ],
+          ),
         ),
       ),
     );
