@@ -46,7 +46,14 @@ class _Login2State extends State<Login2> {
                           color: Colors.grey[600],
                           fontWeight: FontWeight.w600),
                     ),
-                    TextFormField(),
+                    SizedBox(height: 10),
+                    Container(
+                      child: Column(
+                        children: [
+                          TextFormField(),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
