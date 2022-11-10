@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_tube/screens/home_page.dart';
 
 import 'screens/login.dart';
+import 'screens/login2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: MyLogin(),
+      home: Login2(),
     );
   }
 }
