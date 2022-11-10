@@ -46,15 +46,20 @@ class _Login2State extends State<Login2> {
                           color: Colors.grey[600],
                           fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(height: 10),
-                    Container(
-                      child: Column(
-                        children: [
-                          TextFormField(),
-                        ],
-                      ),
-                    ),
                   ],
+                ),
+              ),
+              Positioned(
+                top: 370,
+                child: TextFormField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    labelText: 'Password',
+                    hintText: 'Enter Password',
+                  ),
                 ),
               ),
             ],
