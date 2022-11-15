@@ -15,7 +15,7 @@ class Login2 extends StatefulWidget {
 
 class _Login2State extends State<Login2> {
   var userName = '';
-  var passWord = '';
+  var password = '';
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -75,7 +75,7 @@ class _Login2State extends State<Login2> {
               ),
               TextFormField(
                 onChanged: (value) {
-                  passWord = value;
+                  password = value;
                 },
                 // obscureText: true,
                 decoration: InputDecoration(
@@ -92,7 +92,7 @@ class _Login2State extends State<Login2> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  loginmethod(userName, passWord, context);
+                  loginMethod(userName, password, context);
                 },
                 child: Text('Submit'),
               ),
@@ -103,7 +103,7 @@ class _Login2State extends State<Login2> {
     );
   }
 
-  Future loginmethod(String value1, String value2, context) async {
+  Future loginMethod(String value1, String value2, context) async {
     final response = await http.post(
       Uri.parse('http://103.69.242.42:8080/TestAPI/Auth.svc/authenticateUser'),
       headers: <String, String>{

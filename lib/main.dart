@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_tube/screens/home_page.dart';
 
+import 'screens/ex.dart';
 import 'screens/login.dart';
 import 'screens/login2.dart';
 
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: ThemeMode.dark,
-      darkTheme: ThemeData.dark(),
+      // themeMode: ThemeMode.dark,
+      // darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: Login2(),
     );
